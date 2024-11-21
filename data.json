@@ -1,0 +1,253 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ali Yılmaz",
+      "password": "12345678",
+      "income": [
+        {
+          "id": 1,
+          "description": "Monthly Salary",
+          "amount": 10000,
+          "date": "2024-11-01"
+        },
+        {
+          "id": 2,
+          "description": "Freelance Project",
+          "amount": 2000,
+          "date": "2024-11-15"
+        }
+      ],
+      "expenses": [
+        {
+          "id": 1,
+          "description": "Grocery Shopping",
+          "category": "Food",
+          "amount": 500,
+          "date": "2024-11-03"
+        },
+        {
+          "id": 2,
+          "description": "Rent Payment",
+          "category": "Rent",
+          "amount": 4000,
+          "date": "2024-11-01"
+        },
+        {
+          "id": 3,
+          "description": "Electricity Bill",
+          "category": "Utilities",
+          "amount": 300,
+          "date": "2024-11-10"
+        },
+        {
+          "id": 4,
+          "description": "Movie Night",
+          "category": "Entertainment",
+          "amount": 150,
+          "date": "2024-11-12"
+        },
+        {
+          "id": 5,
+          "description": "Fuel",
+          "category": "Transportation",
+          "amount": 200,
+          "date": "2024-11-20"
+        }
+      ],
+      "categories": [
+        "Food",
+        "Rent",
+        "Utilities",
+        "Transportation",
+        "Entertainment",
+        "Others"
+      ],
+      "limits": {
+        "Food": 1000,
+        "Rent": 4000,
+        "Utilities": 500,
+        "Transportation": 300,
+        "Entertainment": 500
+      },
+      "darkMode": false
+    },
+    {
+      "id": 2,
+      "name": "Ayşe Kaya",
+      "password": "12345678",
+      "income": [
+        {
+          "id": 1,
+          "description": "Part-Time Job",
+          "amount": 5000,
+          "date": "2024-11-05"
+        },
+        {
+          "id": 2,
+          "description": "Selling Crafts",
+          "amount": 800,
+          "date": "2024-11-10"
+        }
+      ],
+      "expenses": [
+        {
+          "id": 1,
+          "description": "Groceries",
+          "category": "Food",
+          "amount": 600,
+          "date": "2024-11-07"
+        },
+        {
+          "id": 2,
+          "description": "Utility Bills",
+          "category": "Utilities",
+          "amount": 400,
+          "date": "2024-11-12"
+        },
+        {
+          "id": 3,
+          "description": "Bus Tickets",
+          "category": "Transportation",
+          "amount": 150,
+          "date": "2024-11-15"
+        }
+      ],
+      "categories": [
+        "Food",
+        "Utilities",
+        "Transportation",
+        "Others"
+      ],
+      "limits": {
+        "Food": 1200,
+        "Utilities": 700,
+        "Transportation": 200
+      },
+      "darkMode": true
+    },
+    {
+      "id": 3,
+      "name": "Mehmet Demir",
+      "password": "12345678",
+      "income": [
+        {
+          "id": 1,
+          "description": "Monthly Salary",
+          "amount": 15000,
+          "date": "2024-11-01"
+        }
+      ],
+      "expenses": [
+        {
+          "id": 1,
+          "description": "Mortgage Payment",
+          "category": "Rent",
+          "amount": 6000,
+          "date": "2024-11-03"
+        },
+        {
+          "id": 2,
+          "description": "Car Maintenance",
+          "category": "Transportation",
+          "amount": 1200,
+          "date": "2024-11-08"
+        },
+        {
+          "id": 3,
+          "description": "Dining Out",
+          "category": "Entertainment",
+          "amount": 800,
+          "date": "2024-11-10"
+        }
+      ],
+      "categories": [
+        "Rent",
+        "Transportation",
+        "Entertainment",
+        "Others"
+      ],
+      "limits": {
+        "Rent": 6000,
+        "Transportation": 1500,
+        "Entertainment": 1000
+      },
+      "darkMode": false
+    },
+    {
+      "id": 4,
+      "name": "Fatma Çelik",
+      "password": "12345678",
+      "income": [
+        {
+          "id": 1,
+          "description": "Freelance Writing",
+          "amount": 7000,
+          "date": "2024-11-05"
+        },
+        {
+          "id": 2,
+          "description": "Affiliate Marketing",
+          "amount": 3000,
+          "date": "2024-11-20"
+        }
+      ],
+      "expenses": [
+        {
+          "id": 1,
+          "description": "Online Courses",
+          "category": "Education",
+          "amount": 500,
+          "date": "2024-11-07"
+        },
+        {
+          "id": 2,
+          "description": "Books",
+          "category": "Education",
+          "amount": 200,
+          "date": "2024-11-10"
+        },
+        {
+          "id": 3,
+          "description": "Snacks",
+          "category": "Food",
+          "amount": 300,
+          "date": "2024-11-15"
+        }
+      ],
+      "categories": [
+        "Food",
+        "Education",
+        "Others"
+      ],
+      "limits": {
+        "Food": 800,
+        "Education": 1000
+      },
+      "darkMode": true
+    },
+    {
+      "id": 17,
+      "name": "Serhat",
+      "password": "12345678",
+      "income": [],
+      "expenses": [],
+      "categories": [
+        "Food",
+        "Rent",
+        "Utilities",
+        "Transportation",
+        "Entertainment",
+        "Others"
+      ],
+      "limits": {
+        "Food": 1000,
+        "Rent": 4000,
+        "Utilities": 500,
+        "Transportation": 300,
+        "Entertainment": 500
+      },
+      "darkMode": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+.container {
+  @apply flex-col justify-start items-start gap-2 inline-flex w-full my-3;
+}
+
+.label {
+  @apply self-stretch text-gray-800 text-sm font-medium leading-tight;
+}
+
+.inputContainer {
+  @apply w-full flex justify-between px-4 py-3 rounded-md border border-gray-300 gap-2 grow shrink basis-0 text-gray-400 text-[15px] font-normal leading-snug;
+}
+
+.shadowStyle {
+  @apply shadow border-zinc-200;
+}
+
+.input {
+  @apply w-full justify-start items-center inline-flex outline-none;
+}
+.inputBig {
+  @apply w-full min-h-[140px] justify-start items-start inline-flex outline-none;
+}
+.line {
+  @apply top-[11px] relative w-[47px] h-[0px] rotate-90 border border-gray-300;
+}
+
+.buttonText {
+  @apply text-center text-blue-600 text-base font-medium;
+}

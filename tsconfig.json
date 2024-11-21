@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/howItWorksStepper/StepperList.js", "app/hakkimda/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/howItWorksStepper/StepperList.js", "app/hakkimda/page.tsx", "components/loginPage/LoginPage.js", "components/common/inputSection/InputSection.js", "app/page.js"],
   "exclude": ["node_modules"]
 }

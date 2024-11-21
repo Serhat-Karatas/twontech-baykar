@@ -1,0 +1,16 @@
+.container {
+  @apply w-full h-auto bg-[#002AFF] cursor-pointer px-[18px] py-3 rounded-md shadow justify-center items-center gap-1.5 inline-flex;
+}
+
+.disabledCon {
+  @apply !bg-[#D1D5DB] w-full h-auto cursor-pointer px-[18px] py-3 rounded-md shadow justify-center items-center gap-1.5 inline-flex;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.text {
+  @apply text-white text-[15px] font-semibold leading-snug text-center;
+}
