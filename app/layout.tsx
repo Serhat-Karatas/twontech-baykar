@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { BudgetProvider } from "./context/Context";
+import { cookies } from "next/headers";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,9 +17,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = await cookies();
+  const user = cookieStore.get("currentUser");
   return (
     <html lang="tr">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <BudgetProvider userCookie={user?.value}>{children}</BudgetProvider>
+      </body>
     </html>
   );
 }

@@ -7,13 +7,13 @@
       "income": [
         {
           "id": 1,
-          "description": "Monthly Salary",
+          "description": "Aylık Maaş",
           "amount": 10000,
           "date": "2024-11-01"
         },
         {
           "id": 2,
-          "description": "Freelance Project",
+          "description": "Freelance Proje",
           "amount": 2000,
           "date": "2024-11-15"
         }
@@ -21,55 +21,72 @@
       "expenses": [
         {
           "id": 1,
-          "description": "Grocery Shopping",
-          "category": "Food",
+          "description": "Market Alışverişi",
+          "category": "Yiyecek",
           "amount": 500,
           "date": "2024-11-03"
         },
         {
           "id": 2,
-          "description": "Rent Payment",
-          "category": "Rent",
+          "description": "Kira Ödemesi",
+          "category": "Kira",
           "amount": 4000,
           "date": "2024-11-01"
         },
         {
           "id": 3,
-          "description": "Electricity Bill",
-          "category": "Utilities",
+          "description": "Elektrik Faturası",
+          "category": "Fatura",
           "amount": 300,
           "date": "2024-11-10"
         },
         {
           "id": 4,
-          "description": "Movie Night",
-          "category": "Entertainment",
+          "description": "Sinema Gecesi",
+          "category": "Eğlence",
           "amount": 150,
           "date": "2024-11-12"
         },
         {
           "id": 5,
-          "description": "Fuel",
-          "category": "Transportation",
+          "description": "Yakıt",
+          "category": "Ulaşım",
           "amount": 200,
           "date": "2024-11-20"
         }
       ],
       "categories": [
-        "Food",
-        "Rent",
-        "Utilities",
-        "Transportation",
-        "Entertainment",
-        "Others"
+        {
+          "id": 1,
+          "name": "Yiyecek",
+          "limit": 1000
+        },
+        {
+          "id": 2,
+          "name": "Kira",
+          "limit": 4000
+        },
+        {
+          "id": 3,
+          "name": "Fatura",
+          "limit": 500
+        },
+        {
+          "id": 4,
+          "name": "Ulaşım",
+          "limit": 300
+        },
+        {
+          "id": 5,
+          "name": "Eğlence",
+          "limit": 500
+        },
+        {
+          "id": 6,
+          "name": "Diğer",
+          "limit": 0
+        }
       ],
-      "limits": {
-        "Food": 1000,
-        "Rent": 4000,
-        "Utilities": 500,
-        "Transportation": 300,
-        "Entertainment": 500
-      },
       "darkMode": false
     },
     {
@@ -79,13 +96,13 @@
       "income": [
         {
           "id": 1,
-          "description": "Part-Time Job",
+          "description": "Yarı Zamanlı İş",
           "amount": 5000,
           "date": "2024-11-05"
         },
         {
           "id": 2,
-          "description": "Selling Crafts",
+          "description": "El Yapımı Ürün Satışı",
           "amount": 800,
           "date": "2024-11-10"
         }
@@ -93,37 +110,48 @@
       "expenses": [
         {
           "id": 1,
-          "description": "Groceries",
-          "category": "Food",
+          "description": "Market Alışverişi",
+          "category": "Yiyecek",
           "amount": 600,
           "date": "2024-11-07"
         },
         {
           "id": 2,
-          "description": "Utility Bills",
-          "category": "Utilities",
+          "description": "Fatura Ödemeleri",
+          "category": "Fatura",
           "amount": 400,
           "date": "2024-11-12"
         },
         {
           "id": 3,
-          "description": "Bus Tickets",
-          "category": "Transportation",
+          "description": "Otobüs Bileti",
+          "category": "Ulaşım",
           "amount": 150,
           "date": "2024-11-15"
         }
       ],
       "categories": [
-        "Food",
-        "Utilities",
-        "Transportation",
-        "Others"
+        {
+          "id": 1,
+          "name": "Yiyecek",
+          "limit": 1200
+        },
+        {
+          "id": 2,
+          "name": "Fatura",
+          "limit": 700
+        },
+        {
+          "id": 3,
+          "name": "Ulaşım",
+          "limit": 200
+        },
+        {
+          "id": 4,
+          "name": "Diğer",
+          "limit": 0
+        }
       ],
-      "limits": {
-        "Food": 1200,
-        "Utilities": 700,
-        "Transportation": 200
-      },
       "darkMode": true
     },
     {
@@ -133,7 +161,7 @@
       "income": [
         {
           "id": 1,
-          "description": "Monthly Salary",
+          "description": "Aylık Maaş",
           "amount": 15000,
           "date": "2024-11-01"
         }
@@ -141,37 +169,48 @@
       "expenses": [
         {
           "id": 1,
-          "description": "Mortgage Payment",
-          "category": "Rent",
+          "description": "Kredi Ödemesi",
+          "category": "Kira",
           "amount": 6000,
           "date": "2024-11-03"
         },
         {
           "id": 2,
-          "description": "Car Maintenance",
-          "category": "Transportation",
+          "description": "Araç Bakımı",
+          "category": "Ulaşım",
           "amount": 1200,
           "date": "2024-11-08"
         },
         {
           "id": 3,
-          "description": "Dining Out",
-          "category": "Entertainment",
+          "description": "Yemek Dışı",
+          "category": "Eğlence",
           "amount": 800,
           "date": "2024-11-10"
         }
       ],
       "categories": [
-        "Rent",
-        "Transportation",
-        "Entertainment",
-        "Others"
+        {
+          "id": 1,
+          "name": "Kira",
+          "limit": 6000
+        },
+        {
+          "id": 2,
+          "name": "Ulaşım",
+          "limit": 1500
+        },
+        {
+          "id": 3,
+          "name": "Eğlence",
+          "limit": 1000
+        },
+        {
+          "id": 4,
+          "name": "Diğer",
+          "limit": 0
+        }
       ],
-      "limits": {
-        "Rent": 6000,
-        "Transportation": 1500,
-        "Entertainment": 1000
-      },
       "darkMode": false
     },
     {
@@ -181,7 +220,7 @@
       "income": [
         {
           "id": 1,
-          "description": "Freelance Writing",
+          "description": "Freelance Yazarlık",
           "amount": 7000,
           "date": "2024-11-05"
         },
@@ -195,35 +234,43 @@
       "expenses": [
         {
           "id": 1,
-          "description": "Online Courses",
-          "category": "Education",
+          "description": "Online Kurslar",
+          "category": "Eğitim",
           "amount": 500,
           "date": "2024-11-07"
         },
         {
           "id": 2,
-          "description": "Books",
-          "category": "Education",
+          "description": "Kitaplar",
+          "category": "Eğitim",
           "amount": 200,
           "date": "2024-11-10"
         },
         {
           "id": 3,
-          "description": "Snacks",
-          "category": "Food",
+          "description": "Atıştırmalıklar",
+          "category": "Yiyecek",
           "amount": 300,
           "date": "2024-11-15"
         }
       ],
       "categories": [
-        "Food",
-        "Education",
-        "Others"
+        {
+          "id": 1,
+          "name": "Yiyecek",
+          "limit": 800
+        },
+        {
+          "id": 2,
+          "name": "Eğitim",
+          "limit": 1000
+        },
+        {
+          "id": 3,
+          "name": "Diğer",
+          "limit": 0
+        }
       ],
-      "limits": {
-        "Food": 800,
-        "Education": 1000
-      },
       "darkMode": true
     },
     {
@@ -233,20 +280,37 @@
       "income": [],
       "expenses": [],
       "categories": [
-        "Food",
-        "Rent",
-        "Utilities",
-        "Transportation",
-        "Entertainment",
-        "Others"
+        {
+          "id": 1,
+          "name": "Yiyecek",
+          "limit": 1000
+        },
+        {
+          "id": 2,
+          "name": "Kira",
+          "limit": 4000
+        },
+        {
+          "id": 3,
+          "name": "Fatura",
+          "limit": 500
+        },
+        {
+          "id": 4,
+          "name": "Ulaşım",
+          "limit": 300
+        },
+        {
+          "id": 5,
+          "name": "Eğlence",
+          "limit": 500
+        },
+        {
+          "id": 6,
+          "name": "Diğer",
+          "limit": 0
+        }
       ],
-      "limits": {
-        "Food": 1000,
-        "Rent": 4000,
-        "Utilities": 500,
-        "Transportation": 300,
-        "Entertainment": 500
-      },
       "darkMode": false
     }
   ]

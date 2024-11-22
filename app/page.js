@@ -1,32 +1,16 @@
-import StepperList from "@/components/howItWorksStepper/StepperList";
-const stepperList = {
-  title: "Site Haritası",
-  stepper: [
-    {
-      text: "Gelir Ekleme",
-    },
-    {
-      text: "Kategori ve Bütçe Yönetimi",
-    },
-    {
-      text: "Gider Ekleme",
-    },
-    {
-      text: "Raporlama ve Analiz",
-    },
-  ],
-};
+import Income from "@/components/income/Income";
+import Banner from "@/components/banner/Banner";
+import Category from "@/components/category/Category";
+import Expanse from "@/components/expense/Expense";
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="flex flex-col items-center justify-center bg-black w-full h-[90vh] gap-6 text-white">
-        <p className="text-xl uppercase">Serhat Karataş</p>
-        <h1 className="text-6xl sm:text-7xl font-extrabold max-w-[800px] text-center pb-10 -tracking-wide uppercase">
-          Bütçe Yönetim Sistemi
-        </h1>
-        <StepperList data={stepperList} />
-      </div>
+    <main className="flex flex-col items-center gap-20">
+      <Banner />
+      <Income />
+      <Category />
+      <Expanse />
+      <div></div>
     </main>
   );
 }
