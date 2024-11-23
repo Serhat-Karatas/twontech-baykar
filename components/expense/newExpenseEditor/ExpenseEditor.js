@@ -27,6 +27,34 @@ const ExpenseEditor = ({ onSubmit }) => {
       category,
     };
 
+    const selectedCategory = categories.find((cat) => cat.name === category);
+    if (selectedCategory) {
+      const currentMonth = new Date().getMonth();
+      const currentYear = new Date().getFullYear();
+
+      const monthlyExpenses = currentUser.expenses
+        .filter((expense) => {
+          const expenseDate = new Date(expense.date);
+          return (
+            expense.category === category &&
+            expenseDate.getMonth() === currentMonth &&
+            expenseDate.getFullYear() === currentYear
+          );
+        })
+        .reduce((total, expense) => total + expense.amount, 0);
+
+      const newTotal = monthlyExpenses + parseFloat(amount);
+
+      if (
+        selectedCategory.limit > 0 &&
+        newTotal > selectedCategory.limit * 0.8
+      ) {
+        alert(
+          `Dikkat! ${category} kategorisi için belirlenen limitin %80'ini geçtiniz.`
+        );
+      }
+    }
+
     onSubmit(newExpense);
     setDescription("");
     setAmount("");
