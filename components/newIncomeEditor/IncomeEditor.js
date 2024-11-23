@@ -28,7 +28,7 @@ const IncomeEditor = ({ onSubmit }) => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center w-full max-w-[1100px] sm:gap-4 px-4 bg-gray-200">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-[1100px] sm:gap-4 py-4 sm:py-0 px-4 bg-gray-200">
       <div className="flex gap-4 w-full py-2">
         <InputSection
           inputType="text"

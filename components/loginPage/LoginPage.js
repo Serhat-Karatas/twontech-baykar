@@ -84,17 +84,17 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="flex items-center justify-center h-screen">
       <ToastContainer />
       <div className="flex flex-col gap-8 md:flex-row md:gap-0 items-center justify-center p-4">
         <div
-          className="h-auto max-w-[550px] md:max-h-[570px] p-12 shadow-xl md:mr-[-30px] border rounded-lg objecy-cover"
+          className="w-full h-auto max-w-[450px] md:max-h-[570px] p-4 sm:p-12 shadow-xl md:mr-[-30px] border rounded-lg objecy-cover"
           style={{
             background: "hsla(0, 0%, 100%, 0.55)",
-            backdropFilter: "blur(30px)",
+            backdropFilter: "blur(10px)",
           }}
         >
-          <div className="flex flex-row gap-4 mb-8">
+          <div className="flex flex-row w-full gap-4 mb-8">
             <button
               className={`w-full rounded-lg ${
                 isLoginSelect
@@ -120,26 +120,29 @@ const LoginPage = () => {
               KAYIT OL
             </button>
           </div>
-          <InputSection
-            value={email}
-            placeholder="kullanıcı adı"
-            inputType="text"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <InputSection
-            value={password}
-            placeholder="Parola"
-            inputType="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {!isLoginSelect && (
+          <div className="flex w-full flex-col gap-2">
             <InputSection
-              value={passwordAgain}
-              placeholder="Parola Tekrar"
-              inputType="password"
-              onChange={(e) => setPasswordAgain(e.target.value)}
+              value={email}
+              placeholder="kullanıcı adı"
+              inputType="text"
+              onChange={(e) => setEmail(e.target.value)}
             />
-          )}
+            <InputSection
+              value={password}
+              placeholder="Parola"
+              inputType="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {!isLoginSelect && (
+              <InputSection
+                value={passwordAgain}
+                placeholder="Parola Tekrar"
+                inputType="password"
+                onChange={(e) => setPasswordAgain(e.target.value)}
+              />
+            )}
+          </div>
+
           <div className="flex flex-col mt-[24px] gap-[24px]">
             <BlueBtn
               text={isLoginSelect ? "GİRİŞ YAP" : "KAYDOL"}

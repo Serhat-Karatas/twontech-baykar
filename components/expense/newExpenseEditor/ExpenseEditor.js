@@ -63,37 +63,43 @@ const ExpenseEditor = ({ onSubmit }) => {
   };
 
   return (
-    <div className="flex items-center w-full max-w-[1100px] gap-4 px-4 bg-gray-200">
-      <InputSection
-        inputType="text"
-        placeholder="Açıklama"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
-      <InputSection
-        inputType="number"
-        placeholder="Tutar"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-      />
-      <InputSection
-        inputType="date"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-      />
-      <select
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-        className="px-2 py-3 border border-gray-300 rounded shadow-sm"
-      >
-        <option value="">Kategori Seç</option>
-        {categories.map((cat, index) => (
-          <option key={index} value={cat.name}>
-            {cat.name}
-          </option>
-        ))}
-      </select>
-      <BlueBtn onClick={handleSubmit} text="Gider Ekle" />
+    <div className="flex flex-col lg:flex-row items-center w-full max-w-[1100px] gap-4 py-4 sm:py-2 px-4 bg-gray-200">
+      <div className="flex w-full gap-4">
+        <InputSection
+          inputType="text"
+          placeholder="Açıklama"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+        <InputSection
+          inputType="number"
+          placeholder="Tutar"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+        />
+      </div>
+      <div className="flex flex-col lg:flex-row w-full gap-4">
+        <div className="flex w-full gap-4 min-w-[350px]">
+          <InputSection
+            inputType="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="w-full px-2 py-3 border border-gray-300 rounded shadow-sm"
+          >
+            <option value="">Kategori Seç</option>
+            {categories.map((cat, index) => (
+              <option key={index} value={cat.name}>
+                {cat.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <BlueBtn onClick={handleSubmit} text="Gider Ekle" />
+      </div>
     </div>
   );
 };
