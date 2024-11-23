@@ -1,9 +1,9 @@
 .container {
-  @apply w-full h-auto bg-[#002AFF] cursor-pointer px-[18px] py-3 rounded-md shadow justify-center items-center gap-1.5 inline-flex;
+  @apply w-full h-auto bg-[#002AFF] cursor-pointer py-2 rounded-md shadow justify-center items-center gap-1.5 inline-flex;
 }
 
 .disabledCon {
-  @apply !bg-[#D1D5DB] w-full h-auto cursor-pointer px-[18px] py-3 rounded-md shadow justify-center items-center gap-1.5 inline-flex;
+  @apply !bg-[#D1D5DB] w-full h-auto cursor-pointer py-2 rounded-md shadow justify-center items-center gap-1.5 inline-flex;
 }
 
 .icon {

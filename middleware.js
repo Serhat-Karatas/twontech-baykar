@@ -19,6 +19,5 @@ export function middleware(request) {
   return NextResponse.next();
 }
 export const config = {
-  matcher: ["/", "/login"], // Middleware'in çalışacağı yollar
+  matcher: ["/", "/login"],
 };
-

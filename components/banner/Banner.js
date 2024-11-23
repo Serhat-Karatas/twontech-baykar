@@ -23,7 +23,7 @@ const Income = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-black w-full h-[90vh] gap-6 text-white">
       <p className="text-xl uppercase">Serhat Karataş</p>
-      <h1 className="text-6xl sm:text-7xl font-extrabold max-w-[800px] text-center pb-10 -tracking-wide uppercase">
+      <h1 className="text-5xl sm:text-7xl font-extrabold max-w-[800px] text-center pb-10 -tracking-wide uppercase">
         Bütçe Yönetim Sistemi
       </h1>
       <StepperList data={stepperList} />

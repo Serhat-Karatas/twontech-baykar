@@ -18,7 +18,7 @@ const CategoryItem = ({ name, limit, onDelete, onEdit }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full max-w-[1100px] bg-gray-100 p-4 border-b-white border-2 rounded-lg shadow">
+    <div className="flex flex-col gap-4 w-full bg-gray-100 p-4 border-b-white border-2 rounded-lg shadow">
       {!isEditing ? (
         <div className="flex items-center">
           <p className="w-full">{name}</p>

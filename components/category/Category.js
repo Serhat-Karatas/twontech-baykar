@@ -17,9 +17,9 @@ const Category = () => {
     editCategory(name, updatedCategory);
 
   return (
-    <div className="flex flex-col items-center w-full gap-8">
+    <div className="flex flex-col max-w-[1100px] items-center w-full gap-8">
       <CategoryEditor onSubmit={handleAddCategory} />
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full lg:max-h-[300px] lg:overflow-y-auto">
         {currentUser.categories.length > 0 ? (
           currentUser.categories.map((item, index) => (
             <CategoryItem

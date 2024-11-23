@@ -1,5 +1,5 @@
 .container {
-  @apply flex-col justify-start items-start gap-2 inline-flex w-full my-3;
+  @apply flex-col justify-start items-start gap-2 inline-flex w-full;
 }
 
 .label {
