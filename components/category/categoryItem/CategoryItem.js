@@ -18,7 +18,7 @@ const CategoryItem = ({ name, limit, onDelete, onEdit }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full bg-gray-100 p-4 border-b-white border-2 rounded-lg shadow">
+    <div className="flex flex-col gap-4 w-full dark:bg-black bg-gray-100 p-4 border-b-white border-2 rounded-lg shadow">
       {!isEditing ? (
         <div className="flex items-center font-medium">
           <p className="w-full">{name}</p>
@@ -39,7 +39,7 @@ const CategoryItem = ({ name, limit, onDelete, onEdit }) => {
           </div>
         </div>
       ) : (
-        <div className="flex items-center w-full max-w-[1100px] gap-1 sm:gap-4 px-1 sm:px-4 bg-gray-200">
+        <div className="flex items-center w-full max-w-[1100px] gap-1 sm:gap-4 px-1 sm:px-4 dark:bg-black text-black bg-gray-200">
           <input
             type="text"
             value={editedName}

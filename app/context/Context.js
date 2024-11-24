@@ -7,6 +7,7 @@ const BudgetContext = createContext();
 
 const BudgetProvider = ({ children, userCookie }) => {
   const [currentUser, setCurrentUser] = useState(null);
+  const [darkMode, setDarkMode] = useState(currentUser?.darkMode || false);
 
   useEffect(() => {
     if (userCookie) {
@@ -112,6 +113,11 @@ const BudgetProvider = ({ children, userCookie }) => {
     setCurrentUser(updatedUser);
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+    setCurrentUser({ ...currentUser, darkMode: !darkMode });
+  };
+
   return (
     <BudgetContext.Provider
       value={{
@@ -125,6 +131,8 @@ const BudgetProvider = ({ children, userCookie }) => {
         addCategory,
         editCategory,
         deleteCategory,
+        darkMode,
+        toggleDarkMode,
       }}
     >
       {children}

@@ -20,7 +20,7 @@ const IncomeItem = ({ id, description, amount, date, onDelete, onEdit }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full max-w-[1100px] bg-gray-100 p-4 border-b-white border-2 rounded-lg shadow">
+    <div className="flex flex-col gap-4 w-full max-w-[1100px] dark:bg-black bg-gray-100 p-4 border-b-white border-2 rounded-lg shadow">
       {!isEditing ? (
         <div className="flex w-full flex-col sm:flex-row items-center font-medium gap-3 sm:gap-0">
           <span className="flex w-full">
@@ -48,7 +48,7 @@ const IncomeItem = ({ id, description, amount, date, onDelete, onEdit }) => {
           </span>
         </div>
       ) : (
-        <div className="flex flex-col sm:flex-row items-center w-full max-w-[1100px] gap-4 p-4 bg-gray-200">
+        <div className="flex flex-col sm:flex-row items-center w-full max-w-[1100px] gap-4 p-4 dark:bg-black bg-gray-200 text-black">
           <span className="flex w-full gap-4">
             <input
               type="text"

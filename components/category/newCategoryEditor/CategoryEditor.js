@@ -1,9 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import BlueBtn from "@/components/common/blueBtn/BlueBtn";
 import InputSection from "@/components/common/inputSection/InputSection";
 
-const CategoryEditor = ({ onSubmit }) => {
+const CategoryEditor = ({ onSubmit, darkMode }) => {
   const [name, setName] = useState("");
   const [limit, setLimit] = useState("");
 
@@ -25,7 +24,7 @@ const CategoryEditor = ({ onSubmit }) => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center w-full max-w-[1100px] gap-4 py-4 sm:py-0 px-4 bg-gray-200">
+    <div className="flex flex-col sm:flex-row items-center w-full max-w-[1100px] gap-4 py-4 sm:py-0 px-4 dark:bg-black bg-gray-200">
       <div className="flex gap-4 w-full sm:w-2/3 py-2">
         <InputSection
           inputType="text"

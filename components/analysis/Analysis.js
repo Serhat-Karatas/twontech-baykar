@@ -5,7 +5,7 @@ import BarChart from "@/components/analysis/BarChart";
 import PieChart from "@/components/analysis/PieChart";
 import LineChart from "@/components/analysis/LineChart";
 import SavingsStatus from "@/components/analysis/SavingsStatus";
-import DownloadReport from "@/components/bonus/DownloadReport";
+
 
 const getMonthlyData = (data) => {
   const monthlyData = Array(12).fill(0);
@@ -42,7 +42,6 @@ const Analysis = () => {
       <LineChart />
       <PieChart data={{ categories: categoryData }} />
       <SavingsStatus />
-      <DownloadReport />
     </div>
   );
 };

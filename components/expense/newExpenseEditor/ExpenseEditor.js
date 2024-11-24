@@ -63,7 +63,7 @@ const ExpenseEditor = ({ onSubmit }) => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center w-full max-w-[1100px] gap-4 py-4 sm:py-2 px-4 bg-gray-200">
+    <div className="flex flex-col lg:flex-row items-center w-full max-w-[1100px] gap-4 py-4 sm:py-2 px-4 dark:bg-black bg-gray-200">
       <div className="flex w-full gap-4">
         <InputSection
           inputType="text"
@@ -79,7 +79,7 @@ const ExpenseEditor = ({ onSubmit }) => {
         />
       </div>
       <div className="flex flex-col lg:flex-row w-full gap-4">
-        <div className="flex w-full gap-4 min-w-[350px]">
+        <div className="flex w-full gap-4 min-w-0 sm:min-w-[350px]">
           <InputSection
             inputType="date"
             value={date}
@@ -88,7 +88,7 @@ const ExpenseEditor = ({ onSubmit }) => {
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="w-full px-2 py-3 border border-gray-300 rounded shadow-sm"
+            className="w-full px-2 py-3 border border-gray-300 rounded shadow-sm text-black"
           >
             <option value="">Kategori Seç</option>
             {categories.map((cat, index) => (
