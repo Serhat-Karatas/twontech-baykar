@@ -1,32 +1,35 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import StepperList from "@/components/howItWorksStepper/StepperList";
 import { useRouter } from "next/navigation";
 
 const stepperList = {
   title: "Site Haritası",
   stepper: [
-    {
-      text: "Gelir Ekleme",
-    },
-    {
-      text: "Kategori ve Bütçe Yönetimi",
-    },
-    {
-      text: "Gider Ekleme",
-    },
-    {
-      text: "Raporlama ve Analiz",
-    },
-    {
-      text: "Bonus Maddeler",
-    },
+    { text: "Gelir Ekleme" },
+    { text: "Kategori ve Bütçe Yönetimi" },
+    { text: "Gider Ekleme" },
+    { text: "Raporlama ve Analiz" },
+    { text: "Bonus Maddeler" },
   ],
 };
 
 const Banner = () => {
   const router = useRouter();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    try {
+      const storedUser = localStorage.getItem("currentUser");
+      if (storedUser) {
+        const parsedUser = JSON.parse(storedUser);
+        setUser(parsedUser);
+      }
+    } catch (error) {
+      console.error("Kullanıcı verisi okunurken bir hata oluştu:", error);
+    }
+  }, []);
 
   const handleLogout = async () => {
     try {
@@ -47,7 +50,7 @@ const Banner = () => {
 
   return (
     <div className="flex flex-col items-center justify-center bg-black w-full h-auto gap-2 pt-12 pb-10 sm:gap-6 text-white">
-      <p className="text-xl uppercase px-3">Serhat Karataş</p>
+      <p className="text-xl uppercase px-3">{user?.name || "Serhat Karataş"}</p>
       <h1 className="text-5xl sm:text-7xl font-extrabold max-w-[800px] text-center pb-4 sm:pb-10 -tracking-wide uppercase">
         Bütçe Yönetim Sistemi
       </h1>
