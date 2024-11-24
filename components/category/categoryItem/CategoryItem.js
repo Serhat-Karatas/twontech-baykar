@@ -22,7 +22,7 @@ const CategoryItem = ({ name, limit, onDelete, onEdit }) => {
       {!isEditing ? (
         <div className="flex items-center font-medium">
           <p className="w-full">{name}</p>
-          <p className="w-full text-start">{limit.toFixed(2)}</p>
+          <p className="w-full text-start">{limit?.toFixed(2)}</p>
           <div className="w-full flex justify-end gap-4">
             <Button
               image={{ src: deleteIcon, alt: "delete" }}

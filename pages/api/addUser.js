@@ -27,14 +27,7 @@ export default function handler(req, res) {
       password,
       income: [],
       expenses: [],
-      categories: [
-        "Food",
-        "Rent",
-        "Utilities",
-        "Transportation",
-        "Entertainment",
-        "Others",
-      ],
+      categories: [],
       limits: {
         Food: 1000,
         Rent: 4000,

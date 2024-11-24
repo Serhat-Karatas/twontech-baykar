@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Ali Yılmaz",
+      "name": "Serhat",
       "password": "12345678",
       "income": [
         {
@@ -130,227 +130,19 @@
       "darkMode": false
     },
     {
-      "id": 2,
-      "name": "Ayşe Kaya",
-      "password": "12345678",
-      "income": [
-        {
-          "id": 1,
-          "description": "Yarı Zamanlı İş",
-          "amount": 5000,
-          "date": "2024-11-05"
-        },
-        {
-          "id": 2,
-          "description": "El Yapımı Ürün Satışı",
-          "amount": 800,
-          "date": "2024-11-10"
-        }
-      ],
-      "expenses": [
-        {
-          "id": 1,
-          "description": "Market Alışverişi",
-          "category": "Yiyecek",
-          "amount": 600,
-          "date": "2024-11-07"
-        },
-        {
-          "id": 2,
-          "description": "Fatura Ödemeleri",
-          "category": "Fatura",
-          "amount": 400,
-          "date": "2024-11-12"
-        },
-        {
-          "id": 3,
-          "description": "Otobüs Bileti",
-          "category": "Ulaşım",
-          "amount": 150,
-          "date": "2024-11-15"
-        }
-      ],
-      "categories": [
-        {
-          "id": 1,
-          "name": "Yiyecek",
-          "limit": 1200
-        },
-        {
-          "id": 2,
-          "name": "Fatura",
-          "limit": 700
-        },
-        {
-          "id": 3,
-          "name": "Ulaşım",
-          "limit": 200
-        },
-        {
-          "id": 4,
-          "name": "Diğer",
-          "limit": 0
-        }
-      ],
-      "darkMode": true
-    },
-    {
-      "id": 3,
-      "name": "Mehmet Demir",
-      "password": "12345678",
-      "income": [
-        {
-          "id": 1,
-          "description": "Aylık Maaş",
-          "amount": 15000,
-          "date": "2024-11-01"
-        }
-      ],
-      "expenses": [
-        {
-          "id": 1,
-          "description": "Kredi Ödemesi",
-          "category": "Kira",
-          "amount": 6000,
-          "date": "2024-11-03"
-        },
-        {
-          "id": 2,
-          "description": "Araç Bakımı",
-          "category": "Ulaşım",
-          "amount": 1200,
-          "date": "2024-11-08"
-        },
-        {
-          "id": 3,
-          "description": "Yemek Dışı",
-          "category": "Eğlence",
-          "amount": 800,
-          "date": "2024-11-10"
-        }
-      ],
-      "categories": [
-        {
-          "id": 1,
-          "name": "Kira",
-          "limit": 6000
-        },
-        {
-          "id": 2,
-          "name": "Ulaşım",
-          "limit": 1500
-        },
-        {
-          "id": 3,
-          "name": "Eğlence",
-          "limit": 1000
-        },
-        {
-          "id": 4,
-          "name": "Diğer",
-          "limit": 0
-        }
-      ],
-      "darkMode": false
-    },
-    {
-      "id": 4,
-      "name": "Fatma Çelik",
-      "password": "12345678",
-      "income": [
-        {
-          "id": 1,
-          "description": "Freelance Yazarlık",
-          "amount": 7000,
-          "date": "2024-11-05"
-        },
-        {
-          "id": 2,
-          "description": "Affiliate Marketing",
-          "amount": 3000,
-          "date": "2024-11-20"
-        }
-      ],
-      "expenses": [
-        {
-          "id": 1,
-          "description": "Online Kurslar",
-          "category": "Eğitim",
-          "amount": 500,
-          "date": "2024-11-07"
-        },
-        {
-          "id": 2,
-          "description": "Kitaplar",
-          "category": "Eğitim",
-          "amount": 200,
-          "date": "2024-11-10"
-        },
-        {
-          "id": 3,
-          "description": "Atıştırmalıklar",
-          "category": "Yiyecek",
-          "amount": 300,
-          "date": "2024-11-15"
-        }
-      ],
-      "categories": [
-        {
-          "id": 1,
-          "name": "Yiyecek",
-          "limit": 800
-        },
-        {
-          "id": 2,
-          "name": "Eğitim",
-          "limit": 1000
-        },
-        {
-          "id": 3,
-          "name": "Diğer",
-          "limit": 0
-        }
-      ],
-      "darkMode": true
-    },
-    {
-      "id": 17,
-      "name": "Serhat",
+      "id": 66,
+      "name": "test",
       "password": "12345678",
       "income": [],
       "expenses": [],
-      "categories": [
-        {
-          "id": 1,
-          "name": "Yiyecek",
-          "limit": 1000
-        },
-        {
-          "id": 2,
-          "name": "Kira",
-          "limit": 4000
-        },
-        {
-          "id": 3,
-          "name": "Fatura",
-          "limit": 500
-        },
-        {
-          "id": 4,
-          "name": "Ulaşım",
-          "limit": 300
-        },
-        {
-          "id": 5,
-          "name": "Eğlence",
-          "limit": 500
-        },
-        {
-          "id": 6,
-          "name": "Diğer",
-          "limit": 0
-        }
-      ],
+      "categories": [],
+      "limits": {
+        "Food": 1000,
+        "Rent": 4000,
+        "Utilities": 500,
+        "Transportation": 300,
+        "Entertainment": 500
+      },
       "darkMode": false
     }
   ]

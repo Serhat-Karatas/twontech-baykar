@@ -3,14 +3,14 @@
 }
 
 .stepper_container {
-  @apply flex justify-center items-center flex-wrap w-[340px] md:w-[800px] xl:w-[1170px];
+  @apply flex justify-center items-center flex-wrap w-full;
 }
 
 .stepper_circle_line {
   @apply flex flex-col justify-center items-center flex-wrap mx-auto;
 }
 .stepper_item {
-  @apply border-t-[2px] border-white px-[5px] md:px-[20px] mt-[16px] md:mt-[30px] xl:mt-0;
+  @apply border-t-[2px] border-white mt-[16px] md:mt-[30px] xl:mt-0;
 }
 
 .circle_container {
