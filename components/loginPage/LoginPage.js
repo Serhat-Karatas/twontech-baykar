@@ -5,8 +5,10 @@ import { useState } from "react";
 import BlueBtn from "@/components/common/blueBtn/BlueBtn";
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
+import Image from "next/image";
 import "react-toastify/dist/ReactToastify.css";
 import data from "@/data.json";
+import loginimg from "@/public/login.jpg";
 
 const LoginPage = () => {
   const [isLoginSelect, setIsLoginSelect] = useState(true);
@@ -156,10 +158,13 @@ const LoginPage = () => {
           </div>
         </div>
         <div className="w-full h-auto md:w-[400px] md:h-[500px] lg:w-[500px] lg:h-[600px] shadow">
-          <img
-            src="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          <Image
+            src={loginimg}
             alt="login"
             className="w-full h-full border rounded-lg"
+            width={400}
+            height={500}
+            priority
           />
         </div>
       </div>
