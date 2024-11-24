@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Uygulama Test Önerisi
 
-## Getting Started
+Kullanıcı Adı: `Serhat`  
+Parola: `12345678`  
 
-First, run the development server:
+Bu kullanıcı ile giriş yapmanızı öneririm. Çünkü en çok veri bu kullanıcıda bulunmaktadır. (`data.json` dosyasından verileri inceleyebilirsiniz.)  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ama dilerseniz diğer kullanıcı olan `test`,`12345678` ile veya kendi oluşturduğunuz bir kullanıcı ile de testleri gerçekleştirebilirsiniz ancak ilk başta hiç veri olmayacaktır.
+> **Not:** Login olmadan `Home` sayfasına giremezsiniz. Bu işlem, middleware ile cookie kontrol edilerek gerçekleştirilmektedir.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknik Altyapı
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Middleware:** Login olmamış kullanıcıyı `login` sayfasına yönlendirir. Login bilgisi cookie üzerinden kontrol edilmiştir.
+- **API Routes:** Veri kaynağımız olan `data.json` dosyasına yeni kullanıcı eklemek için ve logout işlemi için kullanılmıştır. Vaka çalışması isterlerinde yer almadığı için,`data.json` dosyasına başka işlem yapılamamaktadır.
+- **Context API:** Uygulama genelinde durum yönetimi için kullanılmıştır.  
+- **Next.js**  
+- **Tailwind CSS ve CSS**  
+- **Local Storage ve Cookie Yönetimi**  
+- **Chart.js**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## İçerik
 
-## Learn More
+- Gelir ve Gider Ekleme
+- Bütçe Limitleri ve Uyarılar
+- Raporlama ve Analiz
+- Harcamalarınızı kategorilere ayırabilir ve her kategoriye ait detayları görebilirsiniz.
+- Harcama Kategorileri ve Kategorilere Ait Giderler
+- Responsive Tasarım
+- Dark mode desteği
+- Web uygulaması üzerinden finansal raporları PDF formatında indirebilmesi
+- Kullanıcıların, harcamalarına göre tasarruf önerileri alabilmesi
+- Kullanıcı Kaydı (data.json a kaydedilir)
 
-To learn more about Next.js, take a look at the following resources:
+## Önemli Not
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `Ana Sayfa` üzerinden değişiklikler yaptığınızda eğer **sayfayı yenilerseniz yaptığınız değişiklikleri kaybolacaktır.** Vaka çalışmasında, herhangi bir db ye veya dosyaya veri kaydetmemiz gerektiği yazmadığı için bu işlemleri yapmadım.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Test Linkine Çıkmamı İsterseniz İletişime Geçebilirsiniz.
