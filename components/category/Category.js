@@ -9,7 +9,9 @@ const Category = () => {
     useBudget();
 
   if (!currentUser)
-    return <div>Cookie den ötürü yüklenmedi, lüten refresh atınız.</div>;
+    return (
+      <div>Cookie kaynaklı yüklenmeme olabilir, lütfen sayfayı yenileyiniz</div>
+    );
 
   const handleAddCategory = (category) => addCategory(category);
   const handleDeleteCategory = (categoryId) => deleteCategory(categoryId);
@@ -18,10 +20,15 @@ const Category = () => {
 
   return (
     <div className="flex flex-col max-w-[1100px] items-center w-full gap-8">
+      <h2 className="text-3xl font-bold text-center">Kategori ve Limit Ekle</h2>
+      <p className="text-slate-500 px-3 text-center -mt-3">
+        Eğer liste yüksekliği 300 px den fazla ise KAYDIRILABİLİR(scrollable)
+        bir yapıya dönüşüyor
+      </p>
       <CategoryEditor onSubmit={handleAddCategory} />
-      <div className="flex flex-col items-center w-full lg:max-h-[300px] lg:overflow-y-auto">
+      <div className="flex flex-col items-center w-full max-h-[300px] overflow-y-auto">
         {currentUser.categories.length > 0 ? (
-          currentUser.categories.map((item, index) => (
+          currentUser.categories.map((item) => (
             <CategoryItem
               key={item.id}
               name={item.name}

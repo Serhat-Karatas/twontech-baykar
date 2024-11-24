@@ -120,7 +120,12 @@ const LoginPage = () => {
               KAYIT OL
             </button>
           </div>
+
           <div className="flex w-full flex-col gap-2">
+            <p className="text-xs text-slate-500 px-3">
+              Serhat 12345678 ile giriş yapabilirsiniz. Daha ayrıntılı bilgi
+              için lütfen readme dosyasını inceleyiniz.
+            </p>
             <InputSection
               value={email}
               placeholder="kullanıcı adı"

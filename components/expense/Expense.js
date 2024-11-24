@@ -8,7 +8,9 @@ const Expense = () => {
   const { currentUser, addExpense, deleteExpense, editExpense } = useBudget();
 
   if (!currentUser)
-    return <div>Cookie den ötürü yüklenmedi, lüten refresh atınız.</div>;
+    return (
+      <div>Cookie kaynaklı yüklenmeme olabilir, lütfen sayfayı yenileyiniz</div>
+    );
 
   const handleAddExpense = (expense) => addExpense(expense);
   const handleDeleteExpense = (expenseId) => deleteExpense(expenseId);
@@ -16,9 +18,14 @@ const Expense = () => {
     editExpense(id, updatedExpense);
 
   return (
-    <div className="flex flex-col items-center w-full gap-8">
+    <div className="flex flex-col items-center w-full max-w-[1100px] gap-8">
+      <h2 className="text-3xl font-bold text-center">Gider Ekle</h2>
+      <p className="text-slate-500 px-3 text-center -mt-3">
+        Eğer liste yüksekliği 300 px den fazla ise KAYDIRILABİLİR(scrollable)
+        bir yapıya dönüşüyor
+      </p>
       <ExpenseEditor onSubmit={handleAddExpense} />
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full max-h-[300px] overflow-y-auto">
         {currentUser?.expenses.length > 0 ? (
           currentUser?.expenses.map((expense) => (
             <ExpenseItem

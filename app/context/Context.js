@@ -24,7 +24,7 @@ const BudgetProvider = ({ children, userCookie }) => {
     if (!currentUser) return;
     const updatedUser = {
       ...currentUser,
-      income: [...currentUser.income, { ...income, id: Date.now() }],
+      income: [{ ...income, id: Date.now() }, ...currentUser.income],
     };
     setCurrentUser(updatedUser);
   };
@@ -53,7 +53,7 @@ const BudgetProvider = ({ children, userCookie }) => {
     if (!currentUser) return;
     const updatedUser = {
       ...currentUser,
-      expenses: [...currentUser.expenses, { ...expense, id: Date.now() }],
+      expenses: [{ ...expense, id: Date.now() }, ...currentUser.expenses], 
     };
     setCurrentUser(updatedUser);
   };
@@ -82,8 +82,8 @@ const BudgetProvider = ({ children, userCookie }) => {
     const updatedUser = {
       ...currentUser,
       categories: [
-        ...currentUser.categories,
         { id: Date.now(), name: category.name, limit: category.limit || 0 },
+        ...currentUser.categories,
       ],
     };
     setCurrentUser(updatedUser);
