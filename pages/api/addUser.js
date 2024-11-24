@@ -28,13 +28,6 @@ export default function handler(req, res) {
       income: [],
       expenses: [],
       categories: [],
-      limits: {
-        Food: 1000,
-        Rent: 4000,
-        Utilities: 500,
-        Transportation: 300,
-        Entertainment: 500,
-      },
       darkMode: false,
     };
 
